@@ -164,8 +164,8 @@
                         <div class="sort">
                             <label for="sort-by">Sort by:</label>
                             <select id="sort-by" >
-                                <option value="ascending">Newest</option>
                                 <option value="descending">Oldest</option>
+                                <option value="ascending">Newest</option>
                             </select>
                         </div>
                     </div>
