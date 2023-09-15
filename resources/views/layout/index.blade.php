@@ -12,15 +12,15 @@
 </head>
 <body>
     <div class="app container">
-            <main>
-                @include("components.header")
-                @yield("content")
-                @include("components.footer")
-            </main>
-            <aside>
-                @include("components.map")
-            </aside>
-        </div>
+        <main>
+            @include("components.header")
+            @yield("content")
+        </main>
+        <aside>
+            @include("components.map")
+        </aside>
+    </div>
+    @include("components.footer")
     <script src={{asset("assets/js/script.js")}}></script>
 </body>
 </html>
