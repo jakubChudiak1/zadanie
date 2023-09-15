@@ -386,7 +386,6 @@ button{
 }
 
 .map-btn{
-    width: auto;
     min-width: fit-content;
 }
 
