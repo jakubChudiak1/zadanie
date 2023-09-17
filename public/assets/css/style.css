@@ -333,104 +333,22 @@ button{
 /* map */
 .map{
     position: relative;
-    height: 100%;
     margin: 24px 0 0 16px;
-}
-
-.map iframe{
-    width: 100%;
-    height: 80%;
     min-height: 600px;
-}
-
-.find-location{
-    position: absolute;
-    top: 0;
-    left: 10%;
-    width: 80%;
-    margin-top: 10px;
-}
-
-.location-input{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 20px;
-    background-color: white;
-    border: 1px solid #bdbdbd;
-    border-radius: 16px;
-    outline-color: #787878;
-}
-
-#submit-location{
-    background: none;
-    padding: 0;
-    color: #bdbdbd;
-}
-
-#location-text{
-    width: 100%;
-    border: none;
-    outline: none;
-    font-weight: 600;
-}
-
-#cancel{
-    color: #bdbdbd;
-}
-
-.map-type{
-    position: absolute;
-    left: 0;
-    bottom: 20%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    padding: 0 20px;
-    margin-bottom: 5px;
-}
-
-.map-btn{
-    min-width: fit-content;
-}
-
-.map-btn:hover{
-    background-color: white;
-    color: #1666d9;
-}
-
-.location-icon{
-    position: relative;
-    height: 40px;
-    width: 40px;
-    background-color: white;
-    border-radius: 16px;
-}
-
-.location-icon i{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 80%;
 }
 
 @media(max-width:1180px){
     main{
-        width: 75%;
+        width: 70%;
     }
 
     aside{
-        width: 25%;
+        width: 30%;
     }
 
-    .map-type{
-        flex-direction: column;
-        padding: 0 10px;
-    }
-
-    .map-btn{
-        width: 100%;
+    .map{
+        margin-left: 36px;
     }
 }
 
@@ -449,15 +367,6 @@ button{
 
     .map{
         margin: 24px 0;
-    }
-
-    .map-type{
-        flex-direction: row;
-        bottom: 10px;
-    }
-    
-    .map-btn{
-        width: 20%;
     }
 }
 
@@ -529,14 +438,6 @@ button{
 
     .select-content{
         flex-direction: column;
-    }
-
-    .map-type{
-        flex-direction: column;
-    }
-
-    .map-btn{
-        width: 100%;
     }
 }
 

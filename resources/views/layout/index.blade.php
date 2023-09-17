@@ -22,5 +22,7 @@
     </div>
     @include("components.footer")
     <script src={{asset("assets/js/script.js")}}></script>
+    <script src={{asset("assets/js/map.js")}}></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlnRaizgDtmJEet72jg2Z9qZQP9AvM_PA&callback=initMap"></script>
 </body>
 </html>

@@ -172,13 +172,13 @@
                     <div class="estates-body">
                         <div class="estates-grid">
                             @foreach ($estates as $item)
-                                <div class="estate-item" data-property_type="{{$item->property_type}}" data-style_of_home="{{$item->style_of_home}}" data-accessibility_features="{{$item->accessibility_features}}" data-bedroom="{{$item->bedroom}}" data-bathroom="{{$item->bathroom}}" data-price="{{$item->price}}" data-size="{{$item->size}}" data-created="{{$item->created_at}}">
+                                <div class="estate-item" data-property_type="{{$item->property_type}}" data-style_of_home="{{$item->style_of_home}}" data-accessibility_features="{{$item->accessibility_features}}" data-bedroom="{{$item->bedroom}}" data-bathroom="{{$item->bathroom}}" data-price="{{$item->price}}" data-size="{{$item->size}}" data-created="{{$item->created_at}}" data-location="{{$item->location}}">
                                     <div class="estate-image">
                                         <img src={{asset("images/house.jpg")}} alt={{$item->id}}>
                                     </div>
                                     <div class="estate-info">
                                         <p class="price">${{$item->price}}</p>
-                                        <p class="location">{{str_replace("Spojené štáty americké","",$item->location)}}</p>
+                                        <p class="location">{{$item->location}}</p>
                                         <div class="estate-details">
                                             <div class="estate-details-item">
                                                 <i class="fa-solid fa-bath" style="color: #bdbdbd;"></i> <span>{{$item->bathroom}}</span>  
