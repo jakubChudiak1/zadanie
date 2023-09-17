@@ -64,7 +64,7 @@ function initMap(){
             const location = results[0].geometry.location;
             const locationIcon = {
                 url: "../../images/house.jpg",
-                scaledSize: new google.maps.Size(32, 32),
+                scaledSize: new google.maps.Size(42, 42),
             };
             const marker = new google.maps.Marker({
                 position: location,
