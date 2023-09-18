@@ -89,7 +89,7 @@ function initMap(){
 
         const locationText = document.getElementById('location-text').value;
 
-
+      if(locationText.trim().length !== 0){
         geocoder.geocode({ address: locationText }, (results, status) => {
             if (status === "OK" && results[0].geometry) {
                 const location = results[0].geometry.location;
@@ -105,5 +105,8 @@ function initMap(){
                 console.error("Geocode was not successful for the following reason: " + status);
             }
         });
+      }else{
+        map.setCenter({ lat: 37.553236541464884, lng: -122.31676590989164 });
+      }
     });
 }
