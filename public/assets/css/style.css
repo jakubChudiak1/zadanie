@@ -374,11 +374,11 @@ button{
 
 @media(max-width:1180px){
     main{
-        width: 70%;
+        width: 65%;
     }
 
     aside{
-        width: 30%;
+        width: 35%;
     }
     
     .estates-grid{
