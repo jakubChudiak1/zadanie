@@ -408,6 +408,10 @@ button{
         margin: 24px 0;
     }
 
+    #map{
+        margin-left: 0;
+    }
+
     .estates-grid{
         grid-template-columns: repeat(2,1fr);
     }
