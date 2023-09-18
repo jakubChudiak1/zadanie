@@ -1,5 +1,6 @@
 const estateItem = document.querySelectorAll(".estate-item");
 const searchForm = document.querySelector('.search-location');
+
 function initMap(){
     const map = new google.maps.Map(document.querySelector("#map"),{
         center:{ lat: 37.553236541464884,  lng:-122.31676590989164 }, 
@@ -83,7 +84,6 @@ function initMap(){
         geocodeAddress(address);
     });
 
-    const searchForm = document.querySelector('.search-location');
     searchForm.addEventListener('submit', function (event) {
         event.preventDefault();
 
