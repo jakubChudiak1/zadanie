@@ -2,10 +2,10 @@
     <div id="map">  
     </div>
     <form class="search-location">
-        <button>
+        <button type="submit">
             <i class="fa-solid fa-magnifying-glass" style="color: #bdbdbd;"></i>
         </button>
-        <input type="text">
-        <i class="fa-solid fa-xmark" style="color: #bdbdbd;"></i>
+        <input id="location-text" type="text">
+        <i id="cancel" class="fa-solid fa-xmark" style="color: #bdbdbd;"></i>
     </form>  
 </div>

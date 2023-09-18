@@ -50,6 +50,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });  
   
 
+clearInput.addEventListener("click",()=>{
+    locationText.value = "";
+})
 
 
 document.addEventListener("DOMContentLoaded", function () {

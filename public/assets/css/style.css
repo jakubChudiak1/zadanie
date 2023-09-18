@@ -366,7 +366,7 @@ button{
    background: none;
 }
 
-.search-location input{
+#location-text{
     border: none;
     outline: none;
     width: 100%;

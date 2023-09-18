@@ -1,5 +1,5 @@
 const estateItem = document.querySelectorAll(".estate-item");
-
+const searchForm = document.querySelector('.search-location');
 function initMap(){
     const map = new google.maps.Map(document.querySelector("#map"),{
         center:{ lat: 37.553236541464884,  lng:-122.31676590989164 }, 
@@ -49,7 +49,8 @@ function initMap(){
           },
     });
 
-    const locationData = []
+    const locationData = [];
+    const markers = [];
 
     estateItem.forEach((estate)=>{
         const location = estate.getAttribute("data-location");
@@ -80,5 +81,28 @@ function initMap(){
     
     locationData.forEach((address) => {
         geocodeAddress(address);
+    });
+
+    const searchForm = document.querySelector('.search-location');
+    searchForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const locationText = document.getElementById('location-text').value;
+
+        geocoder.geocode({ address: locationText }, (results, status) => {
+            if (status === "OK" && results[0].geometry) {
+                const location = results[0].geometry.location;
+
+                const marker = new google.maps.Marker({
+                    position: location,
+                    map: map,
+                    title: locationText,
+                });
+
+                map.setCenter(location);
+            } else {
+                console.error("Geocode was not successful for the following reason: " + status);
+            }
+        });
     });
 }
