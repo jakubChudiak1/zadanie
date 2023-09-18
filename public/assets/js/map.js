@@ -89,6 +89,7 @@ function initMap(){
 
         const locationText = document.getElementById('location-text').value;
 
+
         geocoder.geocode({ address: locationText }, (results, status) => {
             if (status === "OK" && results[0].geometry) {
                 const location = results[0].geometry.location;
