@@ -1,7 +1,7 @@
 const estateItem = document.querySelectorAll(".estate-item");
 
 function initMap(){
-    const map = new google.maps.Map(document.querySelector(".map"),{
+    const map = new google.maps.Map(document.querySelector("#map"),{
         center:{ lat: 37.553236541464884,  lng:-122.31676590989164 }, 
         zoom:16,
         streetViewControl: false,
