@@ -50,14 +50,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });  
   
 
-clearInput.addEventListener("click",()=>{
-    locationText.value = "";
-})
 
 
 document.addEventListener("DOMContentLoaded", function () {
     filterCheckboxes.forEach((checkbox) => {
         checkbox.addEventListener("change", applyFilters);
+        console.log("click");
     });
     
     filterSelects.forEach((select) => {
